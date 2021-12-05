@@ -3,8 +3,7 @@ import { getGifs } from "../utils/getGifs";
 
 function useFetchGifs(category) {
   const [state, setstate] = useState({
-    data: [],
-    loading: true,
+    data: []
   });
 
   useEffect(() => {
@@ -15,8 +14,7 @@ function useFetchGifs(category) {
         10
       );
       setstate({
-        data: gifList,
-        loading: false,
+        data: gifList
       });
     }
     fetchData();
