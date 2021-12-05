@@ -8,7 +8,7 @@ function GiftExpertApp() {
 
   const addCategory = (category = "") => {
     setCategories((lastValue) => {
-      return [...lastValue, category];
+      return [category, ...lastValue];
     });
   };
 
