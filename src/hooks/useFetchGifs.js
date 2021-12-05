@@ -10,7 +10,7 @@ function useFetchGifs(category) {
     async function fetchData() {
       const gifList = await getGifs(
         category,
-        "5zxfHyHiOFKQiRNu0sm1JRYsVR2jzL2k",
+        process.env.REACT_APP_GIPHY_KEY,
         10
       );
       setstate({
