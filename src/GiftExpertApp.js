@@ -1,23 +1,24 @@
 import React, { useState } from "react";
-
+import AddCategory from "./components/AddCategory";
 function GiftExpertApp() {
   const [categories, setCategories] = useState([
     "Goku",
     "One Punch",
     "Mario Bros",
   ]);
-  const addCategoryEventHandler = (event) => {
-    event.preventDefault();
+
+  const addCategory = (category = "") => {
     setCategories((lastValue) => {
-      return [...lastValue, "Sonic"];
+      return [...lastValue, category];
     });
   };
 
   return (
     <>
       <h2>Gift Expert App</h2>
+      <AddCategory updateCategoryHandler={addCategory} />
       <hr />
-      <button onClick={addCategoryEventHandler}>Add Category</button>
+
       <ul>
         {categories.map((category) => {
           return <li key={category}>{category}</li>;
