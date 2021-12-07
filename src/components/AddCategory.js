@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 import "./AddCategory.css";
 export const AddCategory = ({ updateCategoryHandler }) => {
   const [inputValue, setInputValue] = useState("");
@@ -27,4 +27,7 @@ AddCategory.propTypes = {
   updateCategoryHandler: PropTypes.func.isRequired,
 };
 
+AddCategory.propTypes = {
+  updateCategoryHandler : PropTypes.func.isRequired
+}
 export default AddCategory;
