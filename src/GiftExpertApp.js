@@ -14,7 +14,7 @@ function GiftExpertApp() {
 
   return (
     <>
-      <h2>Gift Expert App</h2>
+      <h2>Gif Expert App</h2>
       <AddCategory updateCategoryHandler={addCategory} />
       <hr />
 
